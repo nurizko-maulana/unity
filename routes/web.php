@@ -38,6 +38,12 @@ Route::get('/event/comment', function () {
     return view('event.comment');
 });
 
+Route::get('/userprofile', function () {
+    return view('profile.userprofile');
+});
+
+
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
