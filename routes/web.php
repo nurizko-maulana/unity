@@ -26,6 +26,14 @@ Route::get('/event', function () {
     return view('event.index');
 });
 
+Route::get('/event/create', function () {
+    return view('event.create');
+});
+
+Route::get('/event/comment', function () {
+    return view('event.comment');
+});
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
