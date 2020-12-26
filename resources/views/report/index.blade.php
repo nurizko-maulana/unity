@@ -51,175 +51,34 @@
                     </div>
                 </div>
 
-                <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                    <div class="text-xl font-bold">
-                        Banyak anjing galak di depan rumah pak mamat
-                    </div>
-                    <div class="text-base">
-                        hati-hati ya yg ada di komplek ini. mohon jangan dekat2
-                    </div>
-                </div>
-                <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                    <div class="flex">
-                        <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                            background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                        ">
+                <a href="report/comment" class="">
+                    <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
+                        <div class="text-xl font-bold">
+                            Banyak anjing galak di depan rumah pak mamat
                         </div>
-                        <div class="flex flex-col ml-4">
-                            <div class="content-center text-base">
-                                Nurizko Maulana
-                            </div>
-                            <div class="content-center text-sm text-gray-400">
-                                1 day ago
-                            </div>
+                        <div class="text-base">
+                            hati-hati ya yg ada di komplek ini. mohon jangan dekat2
                         </div>
                     </div>
-                </div>
+                    <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
+                        <div class="flex">
+                            <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
+                                background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+                            ">
+                            </div>
+                            <div class="flex flex-col ml-4">
+                                <div class="content-center text-base">
+                                    Nurizko Maulana
+                                </div>
+                                <div class="content-center text-sm text-gray-400">
+                                    1 day ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
-                <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                    <div class="text-xl font-bold">
-                        Banyak anjing galak di depan rumah pak mamat
-                    </div>
-                    <div class="text-base">
-                        hati-hati ya yg ada di komplek ini. mohon jangan dekat2
-                    </div>
-                </div>
-                <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                    <div class="flex">
-                        <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                            background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                        ">
-                        </div>
-                        <div class="flex flex-col ml-4">
-                            <div class="content-center text-base">
-                                Nurizko Maulana
-                            </div>
-                            <div class="content-center text-sm text-gray-400">
-                                1 day ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                    <div class="text-xl font-bold">
-                        Banyak anjing galak di depan rumah pak mamat
-                    </div>
-                    <div class="text-base">
-                        hati-hati ya yg ada di komplek ini. mohon jangan dekat2
-                    </div>
-                </div>
-                <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                    <div class="flex">
-                        <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                            background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                        ">
-                        </div>
-                        <div class="flex flex-col ml-4">
-                            <div class="content-center text-base">
-                                Nurizko Maulana
-                            </div>
-                            <div class="content-center text-sm text-gray-400">
-                                1 day ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                    <div class="text-xl font-bold">
-                        Banyak anjing galak di depan rumah pak mamat
-                    </div>
-                    <div class="text-base">
-                        hati-hati ya yg ada di komplek ini. mohon jangan dekat2
-                    </div>
-                </div>
-                <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                    <div class="flex">
-                        <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                            background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                        ">
-                        </div>
-                        <div class="flex flex-col ml-4">
-                            <div class="content-center text-base">
-                                Nurizko Maulana
-                            </div>
-                            <div class="content-center text-sm text-gray-400">
-                                1 day ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                    <div class="text-xl font-bold">
-                        Banyak anjing galak di depan rumah pak mamat
-                    </div>
-                    <div class="text-base">
-                        hati-hati ya yg ada di komplek ini. mohon jangan dekat2
-                    </div>
-                </div>
-                <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                    <div class="flex">
-                        <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                            background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                        ">
-                        </div>
-                        <div class="flex flex-col ml-4">
-                            <div class="content-center text-base">
-                                Nurizko Maulana
-                            </div>
-                            <div class="content-center text-sm text-gray-400">
-                                1 day ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                    <div class="text-xl font-bold">
-                        Banyak anjing galak di depan rumah pak mamat
-                    </div>
-                    <div class="text-base">
-                        hati-hati ya yg ada di komplek ini. mohon jangan dekat2
-                    </div>
-                </div>
-                <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                    <div class="flex">
-                        <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                            background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                        ">
-                        </div>
-                        <div class="flex flex-col ml-4">
-                            <div class="content-center text-base">
-                                Nurizko Maulana
-                            </div>
-                            <div class="content-center text-sm text-gray-400">
-                                1 day ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                    <div class="text-xl font-bold">
-                        Banyak anjing galak di depan rumah pak mamat
-                    </div>
-                    <div class="text-base">
-                        hati-hati ya yg ada di komplek ini. mohon jangan dekat2
-                    </div>
-                </div>
-                <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                    <div class="flex">
-                        <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                            background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                        ">
-                        </div>
-                        <div class="flex flex-col ml-4">
-                            <div class="content-center text-base">
-                                Nurizko Maulana
-                            </div>
-                            <div class="content-center text-sm text-gray-400">
-                                1 day ago
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="w-1/5">
                 <div class="flex bg-white text-center mb-2 h-40 justify-center rounded-lg shadow-lg" 

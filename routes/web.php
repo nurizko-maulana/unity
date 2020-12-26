@@ -38,14 +38,22 @@ Route::get('/event/comment', function () {
     return view('event.comment');
 });
 
+Route::get('/info', function () {
+    return view('info.index');
+});
+
+
 Route::get('/userprofile', function () {
     return view('profile.userprofile');
 });
 
 
+Route::get('/dashboard', function () {
+    return redirect('/report');
+});
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/report', function () {
+    return view('report.index');
 })->name('dashboard');
 
 Route::resource('todo', TodoController::class)->middleware('auth:sanctum');

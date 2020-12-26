@@ -149,7 +149,7 @@
 </head>
 <body>
 <!--Navigasi ampe body learn More-->
-<div id="background">
+<div id="background" style="background-image:url('img/Backgroundoverlay.jpg'); height: 750px; width:100%;" >
 	<!-- Navigasi bar -->
 	<header id="navigator">
 		<img  src="img/LOGO.png" alt="logo"  width="72" height="68" ><p class="text-3xl font-serif text-white" >U-nity</p>
