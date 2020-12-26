@@ -115,7 +115,7 @@
                         </div>
                         <div class="flex flex-col ml-4">
                             <div class="content-center text-base">
-                                Nanda Azka
+                                Nanda Azka  
                             </div>
                             <div class="content-center text-sm text-gray-400">
                                 1 day ago

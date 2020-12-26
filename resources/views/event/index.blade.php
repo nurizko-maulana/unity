@@ -9,7 +9,7 @@
 
         <div class="flex">
             <div class=" flex items-start w-1/5 h-40 bg-white shadow-xl sm:rounded-lg p-5">
-                <a href=""
+                <a href="/event/create"
                         class="py-4 px-4 font-semibold rounded-lg shadow-md text-2xl text-white bg-green-400 hover:bg-green-300">
                         Create an event
                     </a>
