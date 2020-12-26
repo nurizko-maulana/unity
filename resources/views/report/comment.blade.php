@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Report') }}
+            {{ __('Comment') }}
         </h2>
     </x-slot>
 
@@ -23,17 +23,46 @@
                 background-blend-mode: multiply;"
                 >
                     <span class="mb-auto mt-auto text-4xl text-white ">
-                        REPORT
+                        COMMENT
                     </span>
                 </div>
 
-                {{-- Write a Report --}}
+                {{-- Title Start --}}
+                <div class="text-black font-bold text-2xl py-5 text-center">
+                    Banyak anjing galak di depan rumah pak mamat
+                </div>
+
+                {{-- Title End --}}
+
                 <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                    <div class="text-xl font-bold mb-4">
-                        <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent w-full" type="text" placeholder="Write a report title">
+                    <div class="text-base my-5">
+                        hati-hati ya yg ada di komplek ini. mohon jangan dekat2
                     </div>
-                    <div class="text-base ">
-                        <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent w-full" type="text" placeholder="Write a report description">
+                </div>
+                <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
+                    <div class="flex">
+                        <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
+                            background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+                        ">
+                        </div>
+                        <div class="flex flex-col ml-4">
+                            <div class="content-center text-base">
+                                Nurizko Maulana
+                            </div>
+                            <div class="content-center text-sm text-gray-400">
+                                1 day ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-center text-sm text-gray-400">
+                    Comments
+                </div>
+
+                <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
+                    <div class="text-xl font-bold">
+                        <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent w-full py-3" type="text" placeholder="Write a comment">
                     </div>
                 </div>
 
@@ -51,61 +80,49 @@
                     </div>
                 </div>
 
-                <a href="report/comment" class="">
-                    <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                        <div class="text-xl font-bold">
-                            Banyak anjing galak di depan rumah pak mamat
-                        </div>
-                        <div class="text-base">
-                            hati-hati ya yg ada di komplek ini. mohon jangan dekat2
-                        </div>
-                    </div>
-                    <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                        <div class="flex">
-                            <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                                background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                            ">
-                            </div>
-                            <div class="flex flex-col ml-4">
-                                <div class="content-center text-base">
-                                    Nurizko Maulana
-                                </div>
-                                <div class="content-center text-sm text-gray-400">
-                                    1 day ago
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
 
-                <a href="report/comment" class="">
-                    <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                        <div class="text-xl font-bold">
-                            Gate Ke Luar Komplek Macet
-                        </div>
-                        <div class="text-base">
-                            Orang Satu komplek banyak yg mengeluh tentang kulaitas komplek ini
-                        </div>
+                <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
+                    <div class="text-base">
+                        Shiapp pak ahmad.. ngeri ngeri sedap lewat depan sana
                     </div>
-                    <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                        <div class="flex">
-                            <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                                background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                            ">
+                </div>
+                <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
+                    <div class="flex">
+                        <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
+                            background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+                        ">
+                        </div>
+                        <div class="flex flex-col ml-4">
+                            <div class="content-center text-base">
+                                Nurizko Maulana
                             </div>
-                            <div class="flex flex-col ml-4">
-                                <div class="content-center text-base">
-                                    Nanda Azka
-                                </div>
-                                <div class="content-center text-sm text-gray-400">
-                                    1 week ago
-                                </div>
+                            <div class="content-center text-sm text-gray-400">
+                                1 day ago
                             </div>
                         </div>
                     </div>
-                </a>
-
-                
+                </div>
+                <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
+                    <div class="text-base">
+                        Waduh harus cepet2 di beresin nih masalahnya
+                    </div>
+                </div>
+                <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
+                    <div class="flex">
+                        <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
+                            background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+                        ">
+                        </div>
+                        <div class="flex flex-col ml-4">
+                            <div class="content-center text-base">
+                                Nanda Azka  
+                            </div>
+                            <div class="content-center text-sm text-gray-400">
+                                1 day ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="w-1/5">
                 <div class="flex bg-white text-center mb-2 h-40 justify-center rounded-lg shadow-lg" 
@@ -117,8 +134,8 @@
                 >
                 </div>
 
-                <div class="text-center text-xl my-8">
-                    Community Member
+                <div class="text-center font-bold text-xl my-8">
+                    Mark Status
                 </div>
 
                 <div class="flex mb-5">
