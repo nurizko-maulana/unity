@@ -8,10 +8,10 @@
     <div class="py-12 px-3">
 
         <div class="flex">
-            <div class=" flex items-start w-1/5 h-40 bg-white shadow-xl sm:rounded-lg p-5">
-                <a href=""
-                        class="py-4 px-4 font-semibold rounded-lg shadow-md text-2xl text-white bg-green-400 hover:bg-green-300">
-                        Create an event
+            <div class="flex items-start justify-center w-1/5 h-40 sm:rounded-lg">
+                <a href="event/create"
+                        class="py-5 px-4 font-semibold rounded-lg shadow-md text-2xl text-white bg-green-400 hover:bg-green-300">
+                            Create an event
                     </a>
             </div>
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 w-3/5 ">
@@ -27,14 +27,16 @@
                     </span>
                 </div>
                     <div class="p-0 overflow-hidden rounded-lg cursor-pointer sm:rounded-t-xl text-center text-white bg-green-400 px-6 py-px-6 py-3 mb-2 ">
-                        <div class="text-xl font-bold">
-                            New Year Eve
-                        </div>
+                        <a href="event/comment"  
+                            class="text-xl font-bold">
+                                New Year Eve
+                        </a>
                     </div>
                     <div class=" flex flex-row p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3 justify-between ">
-                        <div class="text-base font-bold text break-words flex-grow-0 w-3/4 ">
-                            We would like to invite all community members to celebrate new year
-                        </div>
+                        <a href="event/comment"  
+                            class="text-base font-bold text break-words flex-grow-0 w-3/4 ">
+                                We would like to invite all community members to celebrate new year
+                        </a>
                         <div class="flex flex-col flex-none w-32 flex-shrink-0 ">
                             <div class="text-base font-bold">
                                 31/12/20
@@ -70,14 +72,16 @@
                         </div>
                     </div>
                     <div class="p-0 overflow-hidden rounded-lg cursor-pointer sm:rounded-t-xl text-center text-white bg-green-400 px-6 py-px-6 py-3 mb-2 ">
-                        <div class="text-xl font-bold">
-                            Christmas Eve
-                        </div>
+                        <a href="event/comment"  
+                            class="text-xl font-bold">
+                                Christmas Eve
+                        </a>
                     </div>
                     <div class="flex flex-row p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3 justify-between">
-                    <div class="text-base font-bold text break-words flex-grow-0 w-3/4 ">
-                            We would like to invite all community members to celebrate Christmas eve
-                        </div>
+                        <a href="event/comment"  
+                            class="text-base font-bold text break-words flex-grow-0 w-3/4 ">
+                                We would like to invite all community members to celebrate Christmas eve
+                        </a>
                         <div class="flex flex-col flex-none w-32 flex-shrink-0">
                             <div class="text-base font-bold">
                                 24/12/20
@@ -113,14 +117,16 @@
                         </div>
                     </div>
                     <div class="p-0 overflow-hidden rounded-lg cursor-pointer sm:rounded-t-xl text-center text-white bg-green-400 px-6 py-px-6 py-3 mb-2 ">
-                        <div class="text-xl font-bold">
-                            Kerja Bakti
-                        </div>
+                        <a href="event/comment"  
+                            class="text-xl font-bold">
+                                Kerja Bakti
+                        </a>
                     </div>
                     <div class="flex flex-row p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3 justify-between ">
-                    <div class="text-base font-bold text break-words flex-grow-0 w-3/4 ">
-                            Yuk kerja
-                        </div>
+                        <a href="event/comment"  
+                            class="text-base font-bold text break-words flex-grow-0 w-3/4 ">
+                                Yuk kerja
+                        </a>
                         <div class="flex flex-col flex-none w-32 flex-shrink-0 ">
                             <div class="text-base font-bold">
                                 30/12/20
