@@ -76,7 +76,7 @@
 
                 <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
                     <div class="text-xl font-bold">
-                        <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent w-full py-3" type="text" placeholder="Write a comment">
+                        <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent w-full py-3" type="text" placeholder="Write a comment">
                     </div>
                 </div>
 

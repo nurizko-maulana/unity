@@ -8,7 +8,7 @@
         <div class="font-bold text-center text-xl align-text-top">
             Event Title
             <div class=" text-gray-400 text-base mb-2 leading-4">
-                <input class="text-center border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert event title">
+                <input class="text-black text-center border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert event title">
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@
         <div class="font-bold text-left">
             Details
             <div class=" text-gray-400 leading-8">
-                <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="What's the event about?">
+                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="What's the event about?">
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@
         <div class="font-bold text-left">
             Date
             <div class=" text-gray-400">
-                <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert date">
+                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert date">
             </div>
         </div>
     </div>
@@ -32,7 +32,7 @@
         <div class="font-bold text-left">
             Time
             <div class=" text-gray-400">
-                <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert time">
+                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert time">
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
         <div class="font-bold text-left">
             Place
             <div class=" text-gray-400">
-                <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert place?">
+                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert place?">
             </div>
         </div>
     </div>
