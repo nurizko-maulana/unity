@@ -20,7 +20,8 @@ class CreateEventsTable extends Migration
             $table->string('Event_name');
             $table->string('Report_desc');
             $table->date('date_create');
-            
+            $table->string('place_create')
+            $table->foreign('user')->references('id')->on('user');
         });
     }
 
