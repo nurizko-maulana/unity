@@ -17,11 +17,11 @@ class CreateReportsTable extends Migration
             $table->id();
             $table->string("title");
             $table->string("message");
-            $table->string("comment_count");
-            $table->string("like_count");
-            $table->string("like_count");
-            $table->string("status");
+            $table->string("comment_count")->default(0);
+            $table->string("like_count")->default(0);
+            $table->enum("status",["pending","solved"]);
             $table->timestamps();
+            $table->foreignId('user_id')->constrained('users');
         });
     }
 
