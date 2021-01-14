@@ -12,6 +12,15 @@
     border-radius: 75%;
   }
 </style>
+<!-- 
+<div>
+  <ul>
+  @foreach($data as $i)
+  <li>{{$i->name}}</li>
+  @endforeach
+  </ul>
+</div>
+-->
 
 <div class="w-full bg-indigo-100 h-screen flex flex-row flex-wrap justify-center ">
   
@@ -27,15 +36,15 @@
       
 
       <div class="pt-2 border-t mt-5 w-full text-center text-xl text-gray-600">
-        Nanda Azka Mulia
+      {{ auth()->user()->name }}
       <div class="pt-2 border-t mt-2 w-full text-center text-xl text-gray-600"></div>
-       Email : azkamulia@graduate.utm.my 
+       Email : {{ auth()->user()->email }}
        <div class="pt-2 border-t mt-2 w-full text-center text-xl text-gray-600"></div>
-        Phone No. +62 81367084380
+        Phone No : {{ auth()->user()->phone_number }}
         <div class="pt-2 border-t mt-2 w-full text-center text-xl text-gray-600"></div>
-        Adress : Kemang Pratama House Complex A1 No.3, South Jakarta, Indonesia
+        Adress : {{ auth()->user()->address }}
         <div class="pt-2 border-t mt-2 w-full text-center text-xl text-gray-600"></div>
-        Joined : February 2019
+        Joined : {{ auth()->user()->created_at }}
 
       </div>
     </div>

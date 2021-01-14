@@ -20,8 +20,7 @@ class CreateEventsTable extends Migration
             $table->string('Event_name');
             $table->string('Report_desc');
             $table->date('date_create');
-            $table->string('place_create')
-            $table->foreign('user')->references('id')->on('user');
+            $table->string('place_create');
         });
     }
 
@@ -29,7 +28,7 @@ class CreateEventsTable extends Migration
      * Reverse the migrations.
      *
      * @return void
-     */
+     */ 
     public function down()
     {
         Schema::dropIfExists('events');
