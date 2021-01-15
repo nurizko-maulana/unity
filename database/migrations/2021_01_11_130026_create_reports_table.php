@@ -19,7 +19,7 @@ class CreateReportsTable extends Migration
             $table->string("message");
             $table->string("comment_count")->default(0);
             $table->string("like_count")->default(0);
-            $table->enum("status",["pending","solved"]);
+            $table->enum("status",["pending","solved"])->default("pending");
             $table->timestamps();
             $table->foreignId('user_id')->constrained('users');
         });
