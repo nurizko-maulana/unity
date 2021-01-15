@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TodoController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,9 +21,9 @@ Route::get('/', function () {
 
 Route::get('list','App\Http\Controllers\Users@list');
 
-Route::get('/report', function () {
-    return view('report.index');
-});
+Route::get('/report', [UserController::class, 'index']);
+
+Route::get('/report/{id}', [UserController::class, 'show']);
 
 Route::get('/report/comment', function () {
     return view('report.comment');
