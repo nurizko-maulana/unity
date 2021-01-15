@@ -154,11 +154,11 @@
 	<header id="navigator">
 		<img  src="img/LOGO.png" alt="logo"  width="72" height="68" ><p class="text-3xl font-serif text-white" >U-nity</p>
 		<nav>
-			<ul class="nav_links">
+		<!--	<ul class="nav_links">
 				<li class="link-li"><a href="#">Home<a></li>
 				<li class="link-li"><a href="#">Contact US<a></li>
 				<li class="link-li"><a href="#">Gallery<a></li>	
-			</ul>
+			</ul>-->
 		</nav>
 		<a class="cta text-black" href="{{ route('login') }}"><button class="bg-white">Log In</button></a>
 		<a class="mr-2 ml-5 font-sans font-medium text-base text-gray-200" href="{{ route('register') }}"><button class="bg-green-500">Register</button></a>

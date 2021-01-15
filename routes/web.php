@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('list','App\Http\Controllers\Users@list');
+
 Route::get('/report', function () {
     return view('report.index');
 });
@@ -43,9 +45,10 @@ Route::get('/info', function () {
 });
 
 
-Route::get('/userprofile', function () {
+Route::get('/userprofile','App\Http\Controllers\Users@list', function () {
     return view('profile.userprofile');
 });
+
 
 
 Route::get('/dashboard', function () {
@@ -57,3 +60,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/report', function () {
 })->name('dashboard');
 
 Route::resource('todo', TodoController::class)->middleware('auth:sanctum');
+
