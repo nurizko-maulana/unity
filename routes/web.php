@@ -49,6 +49,10 @@ Route::get('/userprofile','App\Http\Controllers\Users@list', function () {
     return view('profile.userprofile');
 });
 
+Route::get('/communityprofile','App\Http\Controllers\CommunityController@list', function () {
+    return view('community.communityprofile');
+});
+
 
 
 Route::get('/dashboard', function () {
