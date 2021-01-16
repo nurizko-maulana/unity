@@ -51,6 +51,38 @@
                     </div>
                 </div>
 
+                @forelse ($reports as $report)
+                    <a href="report/comment" class="">
+                        <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
+                            <div class="text-xl font-bold">
+                                {{ $report->title }}
+                            </div>
+                            <div class="text-base">
+                                {{ $report->message }}
+                            </div>
+                        </div>
+                        <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
+                            <div class="flex">
+                                <div class="bg-cover bg-center w-10 h-10 rounded-full" style="">
+                                    <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}">
+                                </div>
+                                <div class="flex flex-col ml-4">
+                                    <div class="content-center text-base">
+                                        Nurizko Maulana
+                                    </div>
+                                    <div class="content-center text-sm text-gray-400">
+                                        {{ $report->created_at }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                @empty
+                    
+                    <div>No Data</div>
+                    
+                @endforelse
+
                 <a href="report/comment" class="">
                     <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
                         <div class="text-xl font-bold">
