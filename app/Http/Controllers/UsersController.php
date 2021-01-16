@@ -7,7 +7,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Image; 
 
-class Users extends Controller
+class UsersController extends Controller
 {
     public function list(){
       $data= User::all();

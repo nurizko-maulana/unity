@@ -51,6 +51,7 @@
                     </div>
                 </div>
 
+
                 @forelse ($reports as $report)
                     <a href="report/comment" class="">
                         <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
