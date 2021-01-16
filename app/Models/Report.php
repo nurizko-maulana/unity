@@ -9,5 +9,8 @@ class Report extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'title', 'message'
+    ];
     
 }

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
-class Users extends Controller
+class UsersController extends Controller
 {
     public function list(){
       $data= User::all();
