@@ -7,20 +7,24 @@
 
     <div class="w-full flex flex-row flex-wrap">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <header>
+  <script>
+  function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }}
+  </script>
+</header>
+
   <style>
-  .round {
-    border-radius: 75%;
-  }
+    .round {
+      border-radius: 75%;
+    }
 </style>
-<!-- 
-<div>
-  <ul>
-  @foreach($data as $i)
-  <li>{{$i->name}}</li>
-  @endforeach
-  </ul>
-</div>
--->
+
 
 <div class="w-full bg-indigo-100 h-screen flex flex-row flex-wrap justify-center ">
   
@@ -32,8 +36,23 @@
   
   <div class="w-0 md:w-1/4 lg:w-1/5 h-0 md:h-screen overflow-y-hidden bg-white shadow-lg">
   <div class="p-5 bg-white sticky top-0">
-      <img class="border border-indigo-100 shadow-lg round" src="https://i.guim.co.uk/img/media/77ab08c5c2cae70ed5e95248ec2b75bc0e27e8ce/0_257_5210_3126/master/5210.jpg?width=645&quality=45&auto=format&fit=max&dpr=2&s=f11609c0e042e9a8afa1ef22a023ae38"> 
+      <img class="item-center" src="../../unity/public/uploads/avatars/{{ auth()->user()->avatar }}" style="width:150px; height:150px; border-radius:50%; display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;"> 
       
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full float-right" onclick="myFunction()">Update</button>
+        <div id="myDIV" style="display:none" >
+          <form enctype="multipart/form-data" action="../../unity/public/userprofile" method="POST">
+          <label >Update Profile Image</label>
+          <input type="file" name="avatar">
+          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+          <input type="submit" class="inline btn btn-sm btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3">
+        </div>
+        <br>
+        
+
+     
 
       <div class="pt-2 border-t mt-5 w-full text-center text-xl text-gray-600">
       {{ auth()->user()->name }}

@@ -56,6 +56,7 @@
   <!-- End Navbar -->
 
   <div class="w-full md:w-3/4 lg:w-4/5 p-5 md:px-12 lg:24 h-full overflow-x-scroll antialiased">
+  <!-- 
     <div class="bg-white w-full shadow rounded-lg p-5">
       <textarea class="bg-gray-200 w-full rounded-lg shadow border p-2" rows="5" placeholder="Put News Here"></textarea>
       
@@ -71,7 +72,7 @@
         </div>
       </div>
     </div>
-    
+    -->
     <div class="mt-3 flex flex-col">
       
       
