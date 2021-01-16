@@ -24,6 +24,8 @@ class CreateNewUser implements CreatesNewUsers
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'address' => ['required', 'string', 'max:255'],
+            'phone_number' => ['required', 'string', 'max:20'],
             'password' => $this->passwordRules(),
         ])->validate();
 
@@ -31,6 +33,8 @@ class CreateNewUser implements CreatesNewUsers
             return tap(User::create([
                 'name' => $input['name'],
                 'email' => $input['email'],
+                'address' => $input['address'],
+                'phone_number' => $input['phone_number'],
                 'password' => Hash::make($input['password']),
             ]), function (User $user) {
                 $this->createTeam($user);
