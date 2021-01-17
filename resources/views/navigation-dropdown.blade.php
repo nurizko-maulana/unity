@@ -20,8 +20,8 @@
                 <x-jet-nav-link href="/event" :active="request()->routeIs('event')">
                     {{ __('Event') }}
                 </x-jet-nav-link>
-                <x-jet-nav-link href="/info" :active="request()->routeIs('info')">
-                    {{ __('Info') }}
+                <x-jet-nav-link href="/Communityprofile" :active="request()->routeIs('info')">
+                    {{ __('Community') }}
                 </x-jet-nav-link>
             </div>
             

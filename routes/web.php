@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TodoController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,9 +21,10 @@ Route::get('/', function () {
 
 Route::get('list','App\Http\Controllers\Users@list');
 
-Route::get('/report', function () {
-    return view('report.index');
-});
+// Route::get('/report', [UserController::class, 'index']);
+// Route::get('/report', [ReportController::class, 'index']);
+
+// Route::get('/report/{id}', [UserController::class, 'show']);
 
 Route::get('/report/comment', function () {
     return view('report.comment');
@@ -45,19 +47,26 @@ Route::get('/info', function () {
 });
 
 
-Route::get('/userprofile','App\Http\Controllers\Users@list', function () {
+Route::get('/userprofile','App\Http\Controllers\UsersController@list', function () {
     return view('profile.userprofile');
 });
+
+Route::get('/communityprofile','App\Http\Controllers\CommunityController@list', function () {
+    return view('community.communityprofile');
+});
+
+Route::post('/userprofile','App\Http\Controllers\Users@updateAvatar');
 
 
 
 Route::get('/dashboard', function () {
     return redirect('/report');
-});
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/report', function () {
-    return view('report.index');
 })->name('dashboard');
 
+// Route::middleware(['auth:sanctum', 'verified'])->get('/report', function () {
+//     return view('report.index');
+// })->name('dashboard');
+
 Route::resource('todo', TodoController::class)->middleware('auth:sanctum');
+Route::resource('report', ReportController::class)->middleware('auth:sanctum');
 
