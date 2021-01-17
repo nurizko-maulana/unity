@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="flex flex-col ml-4">
                                     <div class="content-center text-base">
-                                        Nurizko Maulana
+                                        {{ auth()->user()->name }}
                                     </div>
                                     <div class="content-center text-sm text-gray-400">
                                         {{ $report->created_at }}
@@ -86,114 +86,6 @@
                     <div>No Data</div>
                     
                 @endforelse
-
-                <a href="report/comment" class="">
-                    <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                        <div class="text-xl font-bold">
-                            Banyak anjing galak di depan rumah pak mamat
-                        </div>
-                        <div class="text-base">
-                            hati-hati ya yg ada di komplek ini. mohon jangan dekat2
-                        </div>
-                    </div>
-                    <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                        <div class="flex">
-                            <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                                background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                            ">
-                            </div>
-                            <div class="flex flex-col ml-4">
-                                <div class="content-center text-base">
-                                    Nurizko Maulana
-                                </div>
-                                <div class="content-center text-sm text-gray-400">
-                                    1 day ago
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="report/comment" class="">
-                    <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                        <div class="text-xl font-bold">
-                            Gate Ke Luar Komplek Macet
-                        </div>
-                        <div class="text-base">
-                            Orang Satu komplek banyak yg mengeluh tentang kulaitas komplek ini
-                        </div>
-                    </div>
-                    <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                        <div class="flex">
-                            <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                                background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                            ">
-                            </div>
-                            <div class="flex flex-col ml-4">
-                                <div class="content-center text-base">
-                                    Nanda Azka
-                                </div>
-                                <div class="content-center text-sm text-gray-400">
-                                    1 week ago
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="report/comment" class="">
-                    <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                        <div class="text-xl font-bold">
-                            Aduh bau busuk menyengat di rumah sebelah
-                        </div>
-                        <div class="text-base">
-                            Tolong di bantu rekan2
-                        </div>
-                    </div>
-                    <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                        <div class="flex">
-                            <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                                background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                            ">
-                            </div>
-                            <div class="flex flex-col ml-4">
-                                <div class="content-center text-base">
-                                    Ilham 
-                                </div>
-                                <div class="content-center text-sm text-gray-400">
-                                    3 weeks ago
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="report/comment" class="">
-                    <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                        <div class="text-xl font-bold">
-                            Aduh te
-                        </div>
-                        <div class="text-base">
-                            Orang Satu komplek banyak yg mengeluh tentang kulaitas komplek ini
-                        </div>
-                    </div>
-                    <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                        <div class="flex">
-                            <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                                background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                            ">
-                            </div>
-                            <div class="flex flex-col ml-4">
-                                <div class="content-center text-base">
-                                    Nanda Azka
-                                </div>
-                                <div class="content-center text-sm text-gray-400">
-                                    1 week ago
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
 
                 
             </div>
@@ -211,42 +103,21 @@
                     Community Member
                 </div>
 
+                @forelse ($users as $user)
                 <div class="flex mb-5">
                     <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
                         background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
                     ">
                     </div>
                     <div class="ml-4 content-center text-xl">
-                        Nurizko Maulana
+                        {{ $user->name }}
                     </div>
                 </div>
-                <div class="flex mb-5">
-                    <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                        background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                    ">
-                    </div>
-                    <div class="ml-4 content-center text-xl">
-                        Nur Ilham
-                    </div>
-                </div>
-                <div class="flex mb-5">
-                    <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                        background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                    ">
-                    </div>
-                    <div class="ml-4 content-center text-xl">
-                        Naquib 
-                    </div>
-                </div>
-                <div class="flex mb-5">
-                    <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                        background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                    ">
-                    </div>
-                    <div class="ml-4 content-center text-xl">
-                        Azka
-                    </div>
-                </div>
+                @empty
+                    
+                @endforelse
+
+                
             </div>
         </div>
 
