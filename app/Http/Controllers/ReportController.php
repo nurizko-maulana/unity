@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Report;
+use App\Models\User;
 
 class ReportController extends Controller
 {
@@ -15,8 +16,10 @@ class ReportController extends Controller
     public function index()
     {
         $reports = Report::all();
+        $users = User::all();
         return view('report.index', [
-            'reports' => $reports
+            'reports' => $reports,
+            'users' => $users
         ]);
     }
 
