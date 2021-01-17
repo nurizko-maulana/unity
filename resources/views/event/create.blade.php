@@ -4,11 +4,13 @@
             {{ __('Event > Create') }}
         </h2>
     </x-slot>
+    <form action="{{ route('event.store') }}" method="post">
+        @csrf
     <div class=" flex flex-col p-0 max-w-7xl mx-auto sm:px-6 lg:px-8 w-3/5 overflow-hidden cursor-pointer rounded-t-2xl justify-center bg-white px-12 py-px-8 py-3 mt-6 ">
         <div class="font-bold text-center text-xl align-text-top">
             Event Title
             <div class=" text-gray-400 text-base mb-2 leading-4">
-                <input class="text-black text-center border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert event title">
+                <input class="text-black text-center border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" name="Event_name" type="text" placeholder="Insert event title">
             </div>
         </div>
     </div>
@@ -16,7 +18,7 @@
         <div class="font-bold text-left">
             Details
             <div class=" text-gray-400 leading-8">
-                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="What's the event about?">
+                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" name="Report_desc" type="text" placeholder="What's the event about?">
             </div>
         </div>
     </div>
@@ -24,7 +26,7 @@
         <div class="font-bold text-left">
             Date
             <div class=" text-gray-400">
-                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert date">
+                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" name="date_create"  type="date" placeholder="Insert date">
             </div>
         </div>
     </div>
@@ -32,7 +34,7 @@
         <div class="font-bold text-left">
             Time
             <div class=" text-gray-400">
-                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert time">
+                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" name="time" type="time" placeholder="Insert time">
             </div>
         </div>
     </div>
@@ -40,13 +42,13 @@
         <div class="font-bold text-left">
             Place
             <div class=" text-gray-400">
-                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" type="text" placeholder="Insert place?">
+                <input class="text-black border border-transparent focus:outline-none focus:ring-2 focus:border-transparent" name="place_create" type="text" placeholder="Insert place?">
             </div>
         </div>
     </div>
     <div class=" flex flex-col  w-3/5 mx-auto sm:px-6 p-0 overflow-hidden rounded-2xl cursor-pointer-t-xl items-center bg-green-400 hover:bg-green-300 px-6 py-px-6 py-3 mt-6">
-        <div class="font-bold text-2xl text-white text-left">
-            Create Event
-        </div>
+        <input class="font-bold text-2xl text-white bg-transparent text-left" type="submit" value="Create Event"/>
+    
     </div>
+</form>
 </x-app-layout>

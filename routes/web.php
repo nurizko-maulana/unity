@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,17 +31,17 @@ Route::get('/report/comment', function () {
     return view('report.comment');
 });
 
-Route::get('/event', function () {
-    return view('event.index');
-});
+// Route::get('/event', function () {
+//     return view('event.index');
+// });
 
-Route::get('/event/create', function () {
-    return view('event.create');
-});
+// Route::get('/event/create', function () {
+//     return view('event.create');
+// });
 
-Route::get('/event/comment', function () {
-    return view('event.comment');
-});
+// Route::get('/event/comment', function () {
+//     return view('event.comment');
+// });
 
 Route::get('/info', function () {
     return view('info.index');
@@ -69,4 +70,5 @@ Route::get('/dashboard', function () {
 
 Route::resource('todo', TodoController::class)->middleware('auth:sanctum');
 Route::resource('report', ReportController::class)->middleware('auth:sanctum');
+Route::resource('event', EventController::class)->middleware('auth:sanctum');
 

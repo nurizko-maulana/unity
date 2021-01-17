@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Report;
+use App\Models\Event;
 use App\Models\User;
 
-class ReportController extends Controller
+class EventController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +15,10 @@ class ReportController extends Controller
      */
     public function index()
     {
-        $reports = Report::orderBy('created_at', 'desc')->get();
+        $events = Event::orderBy('created_at', 'desc')->get();
         $users = User::all();
-        return view('report.index', [
-            'reports' => $reports,
+        return view('event.index', [
+            'events' => $events,
             'users' => $users
         ]);
     }
@@ -30,7 +30,7 @@ class ReportController extends Controller
      */
     public function create()
     {
-        //
+        return view('event.create');
     }
 
     /**
@@ -41,13 +41,16 @@ class ReportController extends Controller
      */
     public function store(Request $request)
     {
-        $report = new Report;
-        $report->title = $request->title;
-        $report->message = $request->message;
-        $report->user_id = auth()->user()->id;
-        $report->save();
+        $event = new Event;
+        $event->Event_name = $request->Event_name;
+        $event->Report_desc = $request->Report_desc;
+        $event->date_create = $request->date_create;
+        $event->time = $request->time;
+        $event->place_create = $request->place_create;
+        $event->user_id = auth()->user()->id;
+        $event->save();
 
-        return redirect()->route('report.index');
+        return redirect()->route('event.index');
     }
 
     /**
@@ -58,10 +61,10 @@ class ReportController extends Controller
      */
     public function show($id)
     {
-        $report = Report::firstOrFail($id);
+        $event = Event::firstOrFail($id);
         
-        return view('report.comment', [
-            'report' => $report
+        return view('event.comment', [
+            'event' => $event
         ]);
     }
 
