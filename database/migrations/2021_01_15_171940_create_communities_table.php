@@ -22,6 +22,7 @@ class CreateCommunitiesTable extends Migration
             $table->String('Community_info');
             $table->String('Community_highcommite');
             $table->String('Community_motto');
+            $table->String('Community_avatar')->default('defaultcommunity.jpg');
         });
     }
 

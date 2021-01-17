@@ -53,6 +53,8 @@ Route::get('/communityprofile','App\Http\Controllers\CommunityController@list', 
     return view('community.communityprofile');
 });
 
+Route::post('/userprofile','App\Http\Controllers\Users@updateAvatar');
+
 
 
 Route::get('/dashboard', function () {

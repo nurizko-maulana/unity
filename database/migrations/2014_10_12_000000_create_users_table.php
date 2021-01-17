@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('address');
             $table->string('phone_number');
             $table->enum('role', ['user', 'hc']);
+            $table->string('avatar')->default('default.jpg');
             //$table->foreign('Community')->references('id')->on('Community');
 
             $table->rememberToken();
