@@ -22,9 +22,9 @@ Route::get('/', function () {
 Route::get('list','App\Http\Controllers\Users@list');
 
 // Route::get('/report', [UserController::class, 'index']);
-Route::get('/report', [ReportController::class, 'index']);
+// Route::get('/report', [ReportController::class, 'index']);
 
-Route::get('/report/{id}', [UserController::class, 'show']);
+// Route::get('/report/{id}', [UserController::class, 'show']);
 
 Route::get('/report/comment', function () {
     return view('report.comment');
@@ -66,4 +66,5 @@ Route::get('/dashboard', function () {
 // })->name('dashboard');
 
 Route::resource('todo', TodoController::class)->middleware('auth:sanctum');
+Route::resource('report', ReportController::class)->middleware('auth:sanctum');
 

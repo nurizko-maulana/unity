@@ -28,28 +28,31 @@
                 </div>
 
                 {{-- Write a Report --}}
-                <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
-                    <div class="text-xl font-bold mb-4">
-                        <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent w-full" type="text" placeholder="Write a report title">
-                    </div>
-                    <div class="text-base ">
-                        <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent w-full" type="text" placeholder="Write a report description">
-                    </div>
-                </div>
-
-                <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
-                    <div class="flex flex-auto ">
-                        <div class="flex flex-1">
-                            <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
-                                background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                            ">
-                            </div>
+                <form action="{{ route('report.store') }}" method="POST">
+                    @csrf
+                    <div class="p-0 overflow-hidden rounded-none cursor-pointer sm:rounded-t-xl bg-white px-6 py-px-6 py-3  ">
+                        <div class="text-xl font-bold mb-4">
+                            <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent w-full" name="title" type="text" placeholder="Write a report title">
                         </div>
-                        <button class="inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-green-500 rounded-full shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none">
-                            POST
-                        </button>
+                        <div class="text-base ">
+                            <input class="border border-transparent focus:outline-none focus:ring-2 focus:border-transparent w-full" name="message" type="text" placeholder="Write a report description">
+                        </div>
                     </div>
-                </div>
+
+                    <div class="flex justify-between px-6 py-3 border-t border-gray-200 rounded-none dark:border-dark-800 sm:rounded-b-xl bg-white mb-5">
+                        <div class="flex flex-auto ">
+                            <div class="flex flex-1">
+                                <div class="bg-cover bg-center w-10 h-10 rounded-full" style="
+                                    background-image: url('https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+                                ">
+                                </div>
+                            </div>
+                            <button class="inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-green-500 rounded-full shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none">
+                                POST
+                            </button>
+                        </div>
+                    </div>
+                </form>
 
 
                 @forelse ($reports as $report)

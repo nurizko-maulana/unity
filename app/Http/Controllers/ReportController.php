@@ -41,7 +41,7 @@ class ReportController extends Controller
         $report = new Report;
         $report->title = $request->title;
         $report->message = $request->message;
-        $report->user_id = $request->auth()->user()->id;
+        $report->user_id = auth()->user()->id;
         $report->save();
 
         return redirect()->route('report.index');
